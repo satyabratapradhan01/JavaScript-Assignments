@@ -19,7 +19,7 @@
 */
 
 function getUniqueElements(arr) {
-  // Your code here
+  return arr.filter((ele, index) => arr.indexOf(ele) === index);
 }
 
 module.exports = getUniqueElements;

@@ -9,7 +9,18 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-    return [];
+  let arr = [];
+  let result = transactions.reduce((acc, key) =>{
+    let finds = acc.find(item => item.category == key.category);
+    if(finds){
+      finds.totalSpent  += key.price;
+    }else{
+      acc.push({ category: key.category, totalSpent: key.price });
+    }
+
+    return acc;
+  }, [])
+  return result;
 }
 
 module.exports = calculateTotalSpentByCategory;

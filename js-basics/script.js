@@ -37,7 +37,7 @@
 // }
 // console.log(arr);
 
-Question:4
+Question: 4;
 // let arr = ["apple", "banana", "apple", "orange", "banana", "apple"];
 // let object = arr.reduce((acc, fruit) => {
 //     acc[fruit] = (acc[fruit] || 0) + 1;
@@ -45,7 +45,7 @@ Question:4
 // }, {});
 // for(let fruits of arr){
 //     object[fruits] = (object[fruits] || 0) + 1;
-    
+
 // }
 // console.log(object);
 
@@ -101,7 +101,7 @@ Question:4
 // }
 // console.log(object);
 
-Question:7
+Question: 7;
 // let obj = { a: 20, b: 60, c: 40, d: 90 };
 // let object = {};
 // for(let key in obj){
@@ -112,7 +112,7 @@ Question:7
 // }
 // console.log(object)
 
-Question:8
+Question: 8;
 // let obj = { A: [80, 90], B: [70, 75, 85] }
 // let object = {};
 // for(let key in obj){
@@ -135,7 +135,7 @@ Question:8
 // }
 // console.log(char);
 
-Question:9
+Question: 9;
 
 // let obj = { x: [1,2,3], y: [2,3,4], z: [4,5] }
 
@@ -161,8 +161,7 @@ Question:9
 // }
 // // console.log(arrIs);
 
-
-Question:10
+Question: 10;
 // let obj = { name: "Rahul", age: 23, city: "Noida" };
 // let arr = ["name","city"];
 
@@ -183,7 +182,7 @@ Question:10
 
 // console.log(object);
 
-Question:11
+Question: 11;
 
 // let obj = { a: 3, b: 1, c: 2 };
 // let arr = Object.entries(obj).sort((a, b) => a[1] - b[1]);
@@ -195,7 +194,7 @@ Question:11
 // }
 // console.log(arr);
 
-Question:11
+Question: 11;
 // let obj = { a: 1, b: 2, c: 3 };
 // let count = Object.keys(obj);
 // for(let key in obj){
@@ -203,7 +202,7 @@ Question:11
 // }
 // console.log(count);
 
-Question:12
+Question: 12;
 // let obj = { name: "alice", city: "delhi" }
 // let objec = Object.fromEntries(
 //     Object.entries(obj).map(([key, value]) =>
@@ -225,7 +224,7 @@ Question:12
 // }
 // console.log(char);
 
-Question:16
+Question: 16;
 // let arr = [1,2,3,4,5,6]
 // let object = arr.reduce((obj, val)=>{
 //     val%2 === 0 ? obj.even++ : obj.odd++;
@@ -240,7 +239,7 @@ Question:16
 // }
 // console.log(object);
 
-Question:17
+Question: 17;
 // let obj1 = { a: 1, b: 2, c: 3 };
 // let obj2 = { b: 4, c: 5, d: 6 };
 // let result = Object.entries(obj1).reduce((arr, key) => {
@@ -248,7 +247,7 @@ Question:17
 //         if(key[0] == val){
 //             arr.push(val);
 //         }
-//     }    
+//     }
 //     return arr;
 // }, [])
 // let arr = []
@@ -262,8 +261,7 @@ Question:17
 // let result = Object.keys(obj1).filter(key => key in obj2);
 // console.log(result);
 
-
-Question:18
+Question: 18;
 // let arr = [{ id: 1, name: "A" }, { id: 2, name: "B" }];
 // let result = arr.reduce((obj, key) => {
 //     obj[key.id] = key;
@@ -271,7 +269,7 @@ Question:18
 // }, {})
 // console.log(result);
 
-Question:19
+Question: 19;
 // let obj = { a: 1, b: 1, c: 3 }
 // let bln = true;
 // for(let key in obj){
@@ -285,10 +283,9 @@ Question:19
 // let boolian = Object.values(obj).every(val => typeof val === "number")
 // console.log(boolian)
 
-
 // 20 intermediate (Objects + Arrays)
 
-Question:1
+Question: 1;
 // let arr = [
 //   { user: "A", amount: 100 },
 //   { user: "B", amount: 200 },
@@ -300,7 +297,7 @@ Question:1
 // }, {})
 // console.log(result);
 
-Question:2
+Question: 2;
 // let arr = [
 //   { id: 1, name: "Alice" },
 //   { id: 2, name: "Bob" }
@@ -311,7 +308,7 @@ Question:2
 // }, {});
 // console.log(result);
 
-Question:3
+Question: 3;
 // let obj = { a: 0, b: null, c: "hello", d: undefined, e: 5 };
 // let object = {};
 // for(let key in obj){
@@ -333,7 +330,7 @@ Question:3
 // )
 // console.log(result);
 
-Question:4
+Question: 4;
 // let roles={ admin:["read","write"], user:["read"], staff: ["write"]}
 // let checkRole="admin"
 // let action="write"
@@ -365,7 +362,7 @@ Question:4
 // let result = roles[checkRole]?.includes(action) || false;
 // console.log(result);
 
-Question:5
+Question: 5;
 // let arr = [
 //   { id: 1, category: "electronics", price: 100 },
 //   { id: 2, category: "clothes", price: 50 },
@@ -377,9 +374,28 @@ Question:5
 // }, {})
 // console.log(result);
 
+Question: 6;
+// let arr = [
+//   { id: 1, name: "A" },
+//   { id: 2, name: "B" },
+//   { id: 1, name: "A" },
+// ];
+// let seen = new Set();
+// let result = arr.filter(item => {
+//   if(seen.has(item.id)) return false;
+//   seen.add(item.id);
+//   return true;
+// })
+// console.log(result);
 
-
-
-
+Question:7
+let obj = { a: "apple", b: "banana", c: "kiwi" }
+let st = Object.values(obj)[0];
+for(let key in obj){
+  if(st.length < obj[key].length){
+    st = obj[key];
+  }
+}
+console.log(st)
 
 
